@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Disallow: https://docs.google.com/forms/d/e/1FAIpQLSdNZtGQZ4IjdtFp0q1bPO6lIRBxO-BnaOmmhQG7ryy8QvM6Gg/viewform?usp=dialog
