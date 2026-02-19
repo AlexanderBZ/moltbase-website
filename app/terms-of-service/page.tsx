@@ -6,13 +6,13 @@ import SlimHeader from "@/components/shared/slim-header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "Learn how Moltbase collects, uses, and protects your data.",
+  title: "Terms of Service",
+  description: "Read the Moltbase Terms of Service before using the platform.",
 };
 
-const PrivacyPolicyPage = () => {
+const TermsOfServicePage = () => {
   // Read the Markdown file at build/request time (runs only on the server)
-  const filePath = path.join(process.cwd(), "public", "privacy-policy.md");
+  const filePath = path.join(process.cwd(), "public", "terms-of-service.md");
   const fileContents = fs.readFileSync(filePath, "utf8");
 
   return (
@@ -186,4 +186,4 @@ const PrivacyPolicyPage = () => {
   );
 };
 
-export default PrivacyPolicyPage;
+export default TermsOfServicePage;

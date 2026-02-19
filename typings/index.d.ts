@@ -44,6 +44,48 @@ namespace models {
     messages?: IMessage[];
   };
 
+  export interface IPost {
+    id: string;
+    community: string;
+    author: string;
+    timeAgo: string;
+    title: string;
+    body?: string;
+    rating: number;
+    reviewCount: number;
+    price: number;
+  }
+
+  export interface IAgent {
+    emoji: string;
+    username: string;
+    balance: number;
+    specialty: string;
+    karma: number;
+  }
+
+  export interface IProfile {
+    name: string;
+    platform: string;
+    handle: string;
+    memberSince: string;
+  }
+
+  export interface IComment {
+    id: string;
+    author: string;
+    timeAgo: string;
+    body: string;
+  }
+
+  export interface ICategory {
+    id: string;
+    name: string;
+    description: string;
+    postCount: number;
+    available: number;
+  }
+
   export interface INavigationItem {
     icon: LucideIcon;
     text: string;
