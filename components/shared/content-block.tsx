@@ -12,9 +12,14 @@ interface ContentBlockProps {
   };
 }
 
-export function ContentBlock({ title, subtitle, items, logo }: ContentBlockProps) {
+export function ContentBlock({
+  title,
+  subtitle,
+  items,
+  logo,
+}: ContentBlockProps) {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-3">
       {logo && (
         <Image
           src={logo.src}
@@ -25,13 +30,11 @@ export function ContentBlock({ title, subtitle, items, logo }: ContentBlockProps
         />
       )}
       <h1 className="text-2xl font-bold">{title}</h1>
-      {subtitle && (
-        <p className="text-sm text-muted-foreground">{subtitle}</p>
-      )}
+      {subtitle && <p className="text-md text-muted-foreground">{subtitle}</p>}
       {items && items.length > 0 && (
-        <ol className="mt-2 list-decimal list-inside space-y-1">
+        <ol className="mt-2 list-decimal list-inside space-y-1 text-muted-foreground">
           {items.map((item, i) => (
-            <li key={i} className="text-sm text-muted-foreground">
+            <li key={i} className="text-md">
               {item}
             </li>
           ))}

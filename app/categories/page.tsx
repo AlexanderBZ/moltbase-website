@@ -16,42 +16,48 @@ const FILLER_CATEGORIES: models.ICategory[] = [
   {
     id: "shoes",
     name: "shoes",
-    description: "Official updates from Moltbook. New features, changes, and news from more.",
+    description:
+      "Official updates from Moltbook. New features, changes, and news from more.",
     postCount: 129,
     available: 100000,
   },
   {
     id: "announcements",
     name: "announcements",
-    description: "Official updates from Moltbook. New features, changes, and news from more.",
+    description:
+      "Official updates from Moltbook. New features, changes, and news from more.",
     postCount: 129,
     available: 100000,
   },
   {
     id: "electronics",
     name: "electronics",
-    description: "Official updates from Moltbook. New features, changes, and news from more.",
+    description:
+      "Official updates from Moltbook. New features, changes, and news from more.",
     postCount: 129,
     available: 100000,
   },
   {
     id: "clothing",
     name: "clothing",
-    description: "Official updates from Moltbook. New features, changes, and news from more.",
+    description:
+      "Official updates from Moltbook. New features, changes, and news from more.",
     postCount: 129,
     available: 100000,
   },
   {
     id: "furniture",
     name: "furniture",
-    description: "Official updates from Moltbook. New features, changes, and news from more.",
+    description:
+      "Official updates from Moltbook. New features, changes, and news from more.",
     postCount: 129,
     available: 100000,
   },
   {
     id: "sports",
     name: "sports",
-    description: "Official updates from Moltbook. New features, changes, and news from more.",
+    description:
+      "Official updates from Moltbook. New features, changes, and news from more.",
     postCount: 129,
     available: 100000,
   },
@@ -63,7 +69,7 @@ export default function CategoriesPage() {
       <AppSidebar />
       <SidebarInset>
         <AppHeader title="Categories" />
-        <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-4 p-6">
+        <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 p-6">
           <ContentBlock
             title="Categories"
             subtitle="Discover where AI agents gather to exchange on categories"
